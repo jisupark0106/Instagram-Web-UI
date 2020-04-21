@@ -1,4 +1,3 @@
-<!-- 인스타그램 모작하기 html css 뿌수기 -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,6 +13,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
   </head>
   <body>
     <header>
@@ -32,10 +32,34 @@
           <div class="nameAndFollow">
             <span class="userName">Jan </span>
             <button class="follow">팔로우</button>
+            <ul class="itemNav wide">
+              <li>
+                <a href="#" class="">
+                  <span class="title">게시물</span>
+                  <span class="value">532</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="">
+                  <span class="title">팔로워</span>
+                  <span class="value">25.8백만</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="">
+                  <span class="title">팔로우</span>
+                  <span class="value">0</span>
+                </a>
+              </li>
+            </ul>
+            <span class="user_exp wide">
+              Jane Doe Lorem ipsum dolor sit, amet consectetur adipisicing elit
+              📷✈️🏕️
+            </span>
           </div>
         </div>
 
-        <span class="user_exp">
+        <d class="user_exp small">
           Jane Doe Lorem ipsum dolor sit, amet consectetur adipisicing elit
           📷✈️🏕️</span
         >
@@ -45,35 +69,36 @@
       <ul>
         <li class="story_items">
           <img src="img/story1.jpg" alt="" class="story_img" />
-          <span class="story_title">Jane Doe</span>
+          <div class="story_title">Jane Doe</div >
         </li>
         <li class="story_items">
           <img src="img/story2.jpg" alt="" class="story_img" />
-          <span class="story_title"> Jane Doe</span>
+          <div class="story_title"> Jane Doe</div>
         </li>
       </ul>
     </section>
-    <ul class="itemNav small">
-      <li>
-        <a href="#" class="">
-          <span class="title">게시물</span>
-          <span class="value">532</span>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="">
-          <span class="title">팔로워</span>
-          <span class="value">25.8백만</span>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="">
-          <span class="title">팔로우</span>
-          <span class="value">0</span>
-        </a>
-      </li>
-    </ul>
+
     <section class="itemSec">
+      <ul class="itemNav small">
+        <li>
+          <a href="#" class="">
+            <span class="title">게시물</span>
+            <span class="value">532</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="">
+            <span class="title">팔로워</span>
+            <span class="value">25.8백만</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="">
+            <span class="title">팔로우</span>
+            <span class="value">0</span>
+          </a>
+        </li>
+      </ul>
       <div class="menu">
         <button class="gridBtn">
           <i class="fas fa-table active"></i>
@@ -83,22 +108,24 @@
         </button>
       </div>
       <div class="itemList">
-        <img src="img/item1.jpg" alt="" />
-        <img src="img/item2.jpg" alt="" />
-        <img src="img/item3.jpg" alt="" />
-
-        <img src="img/item4.jpg" alt="" />
-        <img src="img/item5.jpg" alt="" />
-        <img src="img/item6.jpg" alt="" />
-
-        <img src="img/item7.jpg" alt="" />
-        <img src="img/item8.jpg" alt="" />
-        <img src="img/item9.jpg" alt="" />
-
-        <img src="img/item10.jpg" alt="" />
-        <img src="img/item11.jpg" alt="" />
-        <img src="img/item12.jpg" alt="" />
+        <div class="itemContainer">
+          <img src="img/item1.jpg" alt="">
+          <button class="like"><i class="fas fa-heart"> 24K</i></button>
+          <button class="comment"><i class="fas fa-comment"> 21.4K</i></button>
+        </div>
+        <div class="itemContainer"><img src="img/item2.jpg" alt=""><button class="like"><i class="fas fa-heart"></i></button><button class="comment"><i class="fas fa-comment"></i></button></div>
+        <div class="itemContainer"><img src="img/item3.jpg" alt=""><button class="like"><i class="fas fa-heart"></i></button><button class="comment"><i class="fas fa-comment"></i></button></div>
+        <div class="itemContainer"><img src="img/item4.jpg" alt=""><button class="like"><i class="fas fa-heart"></i></button><button class="comment"><i class="fas fa-comment"></i></button></div>
+        <div class="itemContainer"><img src="img/item5.jpg" alt=""><button class="like"><i class="fas fa-heart"></i></button><button class="comment"><i class="fas fa-comment"></i></button></div>
+        <div class="itemContainer"><img src="img/item6.jpg" alt=""><button class="like"><i class="fas fa-heart"></i></button><button class="comment"><i class="fas fa-comment"></i></button></div>
+        <div class="itemContainer"><img src="img/item7.jpg" alt=""><button class="like"><i class="fas fa-heart"></i></button><button class="comment"><i class="fas fa-comment"></i></button></div>
+        <div class="itemContainer"><img src="img/item8.jpg" alt=""><button class="like"><i class="fas fa-heart"></i></button><button class="comment"><i class="fas fa-comment"></i></button></div>
+        <div class="itemContainer"><img src="img/item9.jpg" alt=""><button class="like"><i class="fas fa-heart"></i></button><button class="comment"><i class="fas fa-comment"></i></button></div>
+        <div class="itemContainer"><img src="img/item10.jpg" alt=""><button class="like"><i class="fas fa-heart"></i></button><button class="comment"><i class="fas fa-comment"></i></button></div>
+        <div class="itemContainer"><img src="img/item11.jpg" alt=""><button class="like"><i class="fas fa-heart"></i></button><button class="comment"><i class="fas fa-comment"></i></button></div>
+        <div class="itemContainer"><img src="img/item12.jpg" alt=""><button class="like"><i class="fas fa-heart"></i></button><button class="comment"><i class="fas fa-comment"></i></button></div>
       </div>
+     
     </section>
   </body>
 </html>
